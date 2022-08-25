@@ -1,5 +1,6 @@
 namespace Torneo.App.Dominio
 {
+    // linea de comentario de erika
     public class DirectorTecnico
     {
         public int Id { get; set; }
