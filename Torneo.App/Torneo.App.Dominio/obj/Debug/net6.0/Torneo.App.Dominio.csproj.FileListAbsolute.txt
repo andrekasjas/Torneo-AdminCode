@@ -1,12 +1,12 @@
-C:\Users\CABEZ\Documents\mision_tic\ciclo_3\Torneo\Torneo.App\Torneo.App.Dominio\bin\Debug\net6.0\Torneo.App.Dominio.deps.json
-C:\Users\CABEZ\Documents\mision_tic\ciclo_3\Torneo\Torneo.App\Torneo.App.Dominio\bin\Debug\net6.0\Torneo.App.Dominio.dll
-C:\Users\CABEZ\Documents\mision_tic\ciclo_3\Torneo\Torneo.App\Torneo.App.Dominio\bin\Debug\net6.0\Torneo.App.Dominio.pdb
-C:\Users\CABEZ\Documents\mision_tic\ciclo_3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\Torneo.App.Dominio.csproj.AssemblyReference.cache
-C:\Users\CABEZ\Documents\mision_tic\ciclo_3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\Torneo.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\CABEZ\Documents\mision_tic\ciclo_3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\Torneo.App.Dominio.AssemblyInfoInputs.cache
-C:\Users\CABEZ\Documents\mision_tic\ciclo_3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\Torneo.App.Dominio.AssemblyInfo.cs
-C:\Users\CABEZ\Documents\mision_tic\ciclo_3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\Torneo.App.Dominio.csproj.CoreCompileInputs.cache
-C:\Users\CABEZ\Documents\mision_tic\ciclo_3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\Torneo.App.Dominio.dll
-C:\Users\CABEZ\Documents\mision_tic\ciclo_3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\refint\Torneo.App.Dominio.dll
-C:\Users\CABEZ\Documents\mision_tic\ciclo_3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\Torneo.App.Dominio.pdb
-C:\Users\CABEZ\Documents\mision_tic\ciclo_3\Torneo\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\ref\Torneo.App.Dominio.dll
+E:\OneDrive - Universidad Nacional Abierta y a Distancia\Alexander\MisionTic2022\Ciclo3\Desarrollo de Software\Reto3\G26TorneoFutbol\Torneo.App\Torneo.App.Dominio\bin\Debug\net6.0\Torneo.App.Dominio.deps.json
+E:\OneDrive - Universidad Nacional Abierta y a Distancia\Alexander\MisionTic2022\Ciclo3\Desarrollo de Software\Reto3\G26TorneoFutbol\Torneo.App\Torneo.App.Dominio\bin\Debug\net6.0\Torneo.App.Dominio.dll
+E:\OneDrive - Universidad Nacional Abierta y a Distancia\Alexander\MisionTic2022\Ciclo3\Desarrollo de Software\Reto3\G26TorneoFutbol\Torneo.App\Torneo.App.Dominio\bin\Debug\net6.0\Torneo.App.Dominio.pdb
+E:\OneDrive - Universidad Nacional Abierta y a Distancia\Alexander\MisionTic2022\Ciclo3\Desarrollo de Software\Reto3\G26TorneoFutbol\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\Torneo.App.Dominio.csproj.AssemblyReference.cache
+E:\OneDrive - Universidad Nacional Abierta y a Distancia\Alexander\MisionTic2022\Ciclo3\Desarrollo de Software\Reto3\G26TorneoFutbol\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\Torneo.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+E:\OneDrive - Universidad Nacional Abierta y a Distancia\Alexander\MisionTic2022\Ciclo3\Desarrollo de Software\Reto3\G26TorneoFutbol\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\Torneo.App.Dominio.AssemblyInfoInputs.cache
+E:\OneDrive - Universidad Nacional Abierta y a Distancia\Alexander\MisionTic2022\Ciclo3\Desarrollo de Software\Reto3\G26TorneoFutbol\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\Torneo.App.Dominio.AssemblyInfo.cs
+E:\OneDrive - Universidad Nacional Abierta y a Distancia\Alexander\MisionTic2022\Ciclo3\Desarrollo de Software\Reto3\G26TorneoFutbol\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\Torneo.App.Dominio.csproj.CoreCompileInputs.cache
+E:\OneDrive - Universidad Nacional Abierta y a Distancia\Alexander\MisionTic2022\Ciclo3\Desarrollo de Software\Reto3\G26TorneoFutbol\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\Torneo.App.Dominio.dll
+E:\OneDrive - Universidad Nacional Abierta y a Distancia\Alexander\MisionTic2022\Ciclo3\Desarrollo de Software\Reto3\G26TorneoFutbol\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\refint\Torneo.App.Dominio.dll
+E:\OneDrive - Universidad Nacional Abierta y a Distancia\Alexander\MisionTic2022\Ciclo3\Desarrollo de Software\Reto3\G26TorneoFutbol\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\Torneo.App.Dominio.pdb
+E:\OneDrive - Universidad Nacional Abierta y a Distancia\Alexander\MisionTic2022\Ciclo3\Desarrollo de Software\Reto3\G26TorneoFutbol\Torneo.App\Torneo.App.Dominio\obj\Debug\net6.0\ref\Torneo.App.Dominio.dll

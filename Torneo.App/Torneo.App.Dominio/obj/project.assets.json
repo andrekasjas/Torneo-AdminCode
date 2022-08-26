@@ -8,24 +8,26 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\CABEZ\\.nuget\\packages\\": {}
+    "C:\\Users\\Alexander\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CABEZ\\Documents\\mision_tic\\ciclo_3\\Torneo\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj",
+      "projectUniqueName": "E:\\OneDrive - Universidad Nacional Abierta y a Distancia\\Alexander\\MisionTic2022\\Ciclo3\\Desarrollo de Software\\Reto3\\G26TorneoFutbol\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj",
       "projectName": "Torneo.App.Dominio",
-      "projectPath": "C:\\Users\\CABEZ\\Documents\\mision_tic\\ciclo_3\\Torneo\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj",
-      "packagesPath": "C:\\Users\\CABEZ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CABEZ\\Documents\\mision_tic\\ciclo_3\\Torneo\\Torneo.App\\Torneo.App.Dominio\\obj\\",
+      "projectPath": "E:\\OneDrive - Universidad Nacional Abierta y a Distancia\\Alexander\\MisionTic2022\\Ciclo3\\Desarrollo de Software\\Reto3\\G26TorneoFutbol\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj",
+      "packagesPath": "C:\\Users\\Alexander\\.nuget\\packages\\",
+      "outputPath": "E:\\OneDrive - Universidad Nacional Abierta y a Distancia\\Alexander\\MisionTic2022\\Ciclo3\\Desarrollo de Software\\Reto3\\G26TorneoFutbol\\Torneo.App\\Torneo.App.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\CABEZ\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Alexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

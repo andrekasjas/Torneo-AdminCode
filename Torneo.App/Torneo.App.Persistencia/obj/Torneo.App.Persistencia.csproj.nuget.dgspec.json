@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CABEZ\\Documents\\mision_tic\\ciclo_3\\Torneo\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj": {}
+    "E:\\OneDrive - Universidad Nacional Abierta y a Distancia\\Alexander\\MisionTic2022\\Ciclo3\\Desarrollo de Software\\Reto3\\G26TorneoFutbol\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CABEZ\\Documents\\mision_tic\\ciclo_3\\Torneo\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj": {
+    "E:\\OneDrive - Universidad Nacional Abierta y a Distancia\\Alexander\\MisionTic2022\\Ciclo3\\Desarrollo de Software\\Reto3\\G26TorneoFutbol\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CABEZ\\Documents\\mision_tic\\ciclo_3\\Torneo\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj",
-        "projectName": "Torneo.App.Persistencia",
-        "projectPath": "C:\\Users\\CABEZ\\Documents\\mision_tic\\ciclo_3\\Torneo\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\CABEZ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CABEZ\\Documents\\mision_tic\\ciclo_3\\Torneo\\Torneo.App\\Torneo.App.Persistencia\\obj\\",
+        "projectUniqueName": "E:\\OneDrive - Universidad Nacional Abierta y a Distancia\\Alexander\\MisionTic2022\\Ciclo3\\Desarrollo de Software\\Reto3\\G26TorneoFutbol\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj",
+        "projectName": "Torneo.App.Dominio",
+        "projectPath": "E:\\OneDrive - Universidad Nacional Abierta y a Distancia\\Alexander\\MisionTic2022\\Ciclo3\\Desarrollo de Software\\Reto3\\G26TorneoFutbol\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\Alexander\\.nuget\\packages\\",
+        "outputPath": "E:\\OneDrive - Universidad Nacional Abierta y a Distancia\\Alexander\\MisionTic2022\\Ciclo3\\Desarrollo de Software\\Reto3\\G26TorneoFutbol\\Torneo.App\\Torneo.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\CABEZ\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Alexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,6 +39,87 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\OneDrive - Universidad Nacional Abierta y a Distancia\\Alexander\\MisionTic2022\\Ciclo3\\Desarrollo de Software\\Reto3\\G26TorneoFutbol\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\OneDrive - Universidad Nacional Abierta y a Distancia\\Alexander\\MisionTic2022\\Ciclo3\\Desarrollo de Software\\Reto3\\G26TorneoFutbol\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj",
+        "projectName": "Torneo.App.Persistencia",
+        "projectPath": "E:\\OneDrive - Universidad Nacional Abierta y a Distancia\\Alexander\\MisionTic2022\\Ciclo3\\Desarrollo de Software\\Reto3\\G26TorneoFutbol\\Torneo.App\\Torneo.App.Persistencia\\Torneo.App.Persistencia.csproj",
+        "packagesPath": "C:\\Users\\Alexander\\.nuget\\packages\\",
+        "outputPath": "E:\\OneDrive - Universidad Nacional Abierta y a Distancia\\Alexander\\MisionTic2022\\Ciclo3\\Desarrollo de Software\\Reto3\\G26TorneoFutbol\\Torneo.App\\Torneo.App.Persistencia\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Alexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\OneDrive - Universidad Nacional Abierta y a Distancia\\Alexander\\MisionTic2022\\Ciclo3\\Desarrollo de Software\\Reto3\\G26TorneoFutbol\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj": {
+                "projectPath": "E:\\OneDrive - Universidad Nacional Abierta y a Distancia\\Alexander\\MisionTic2022\\Ciclo3\\Desarrollo de Software\\Reto3\\G26TorneoFutbol\\Torneo.App\\Torneo.App.Dominio\\Torneo.App.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
