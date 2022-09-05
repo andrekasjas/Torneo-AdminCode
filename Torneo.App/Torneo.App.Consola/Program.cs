@@ -21,7 +21,7 @@ namespace Torneo.App.Consola
                 Console.WriteLine("6. Mostar Equipos");
                 Console.WriteLine("0. Salir");
                 Console.WriteLine("Ingrese una opcion");
-                opcion = int.Parse(Console.ReadLine());
+                opcion = Int32.Parse(Console.ReadLine());
                 switch (opcion)
                 {
                     case 1:
@@ -79,9 +79,9 @@ namespace Torneo.App.Consola
             Console.WriteLine("Ingrese el nombre del equipo");
             string nombre = Console.ReadLine();
             Console.WriteLine("Ingrese el id del municipio");
-            int idMunicipio = int.Parse(Console.ReadLine());
+            int idMunicipio = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Ingrese el id del DT");
-            int idDT = int.Parse(Console.ReadLine());
+            int idDT = Int32.Parse(Console.ReadLine());
 
             var equipo = new Equipo
             {
