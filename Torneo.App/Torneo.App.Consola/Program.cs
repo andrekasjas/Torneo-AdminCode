@@ -7,6 +7,7 @@ namespace Torneo.App.Consola
         private static IRepositorioMunicipio _repoMunicipio = new RepositorioMunicipio();
         private static IRepositorioDT _repoDT = new RepositorioDT();
         private static IRepositorioEquipo _repoEquipo = new RepositorioEquipo();
+        private static IRepositorioPartido _repoPartido = new RepositorioPartido();
 
         static void Main(string[] args)
         {
@@ -16,9 +17,11 @@ namespace Torneo.App.Consola
                 Console.WriteLine("1. Insertar Municipio");
                 Console.WriteLine("2. Insertar Director Tecnico");
                 Console.WriteLine("3. Insertar Equipo");
-                Console.WriteLine("4. Mostar Municipios");
-                Console.WriteLine("5. Mostar Directores Tecnicos");
-                Console.WriteLine("6. Mostar Equipos");
+                Console.WriteLine("4. Insertar Partido");
+                Console.WriteLine("5. Mostar Municipios");
+                Console.WriteLine("6. Mostar Directores Tecnicos");
+                Console.WriteLine("7. Mostar Equipos");
+                Console.WriteLine("8. Mostar Partidos");
                 Console.WriteLine("0. Salir");
                 Console.WriteLine("Ingrese una opcion");
                 opcion = Int32.Parse(Console.ReadLine());
@@ -34,13 +37,19 @@ namespace Torneo.App.Consola
                         AddEquipo();
                         break;
                     case 4:
-                        GetAllMunicipios();
+                        AddPartido();
                         break;
                     case 5:
-                        GetAllDTs();
+                        GetAllMunicipios();
                         break;
                     case 6:
+                        GetAllDTs();
+                        break;
+                    case 7:
                         GetAllEquipos();
+                        break;
+                    case 8:
+                        GetAllPartidos();
                         break;
                 }
             } while (opcion != 0);
@@ -90,6 +99,30 @@ namespace Torneo.App.Consola
             _repoEquipo.AddEquipo(equipo, idMunicipio, idDT);
         }
 
+        private static void AddPartido()
+        {
+            Console.WriteLine("Ingrese el id del equipo Local");
+            int idEquipoLocal = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el id del equipo Visitante");
+            int idEquipoVisitante = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el numero de goles del equipo Local");
+            int golesEquipoLocal = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el numero de goles del equipo Visitante");
+            int golesEquipoVisitante = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese la fecha del partido");
+            DateTime fecha = DateTime.Parse(Console.ReadLine());
+
+            var partido = new Partido
+            {
+                Local = _repoEquipo.GetEquipo(idEquipoLocal),
+                Visitante = _repoEquipo.GetEquipo(idEquipoVisitante),
+                MarcadorLocal = golesEquipoLocal,
+                MarcadorVisitante = golesEquipoVisitante,
+                FechaHora = fecha,
+            };
+            _repoPartido.AddPartido(partido, idEquipoLocal, idEquipoVisitante);
+        }
+
         private static void GetAllMunicipios()
         {
             foreach (var municipio in _repoMunicipio.GetAllMunicipios())
@@ -111,6 +144,14 @@ namespace Torneo.App.Consola
             foreach (var equipo in _repoEquipo.GetAllEquipos())
             {
                 Console.WriteLine(equipo.Id + " " + equipo.Nombre + " " + equipo.Municipio.Nombre + " " + equipo.DirectorTecnico.Nombre);
+            }
+        }
+
+        private static void GetAllPartidos()
+        {
+            foreach (var partido in _repoPartido.GetAllPartidos())
+            {
+                Console.WriteLine(partido.Id + " " + partido.Local.Nombre + " " + partido.Visitante.Nombre + " " + partido.MarcadorLocal + " " + partido.MarcadorVisitante + " " + partido.FechaHora);
             }
         }
     }
