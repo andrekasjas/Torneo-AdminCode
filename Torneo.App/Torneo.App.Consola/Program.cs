@@ -9,6 +9,7 @@ namespace Torneo.App.Consola
         private static IRepositorioEquipo _repoEquipo = new RepositorioEquipo();
         private static IRepositorioPartido _repoPartido = new RepositorioPartido();
         private static IRepositorioPosicion _repoPosicion = new RepositorioPosicion();
+        private static IRepositorioJugador _repoJugador = new RepositorioJugador();
 
         static void Main(string[] args)
         {
@@ -20,11 +21,13 @@ namespace Torneo.App.Consola
                 Console.WriteLine("3. Insertar Equipo");
                 Console.WriteLine("4. Insertar Partido");
                 Console.WriteLine("5. Insertar Posicion");
-                Console.WriteLine("6. Mostar Municipios");
-                Console.WriteLine("7. Mostar Directores Tecnicos");
-                Console.WriteLine("8. Mostar Equipos");
-                Console.WriteLine("9. Mostar Partidos");
-                Console.WriteLine("10. Mostar Posiciones");
+                Console.WriteLine("6. Insertar Jugador");
+                Console.WriteLine("7. Mostar Municipios");
+                Console.WriteLine("8. Mostar Directores Tecnicos");
+                Console.WriteLine("9. Mostar Equipos");
+                Console.WriteLine("10. Mostar Partidos");
+                Console.WriteLine("11. Mostar Posiciones");
+                Console.WriteLine("12. Mostar Jugadores");
                 Console.WriteLine("0. Salir");
                 Console.WriteLine("Ingrese una opcion");
                 opcion = Int32.Parse(Console.ReadLine());
@@ -44,21 +47,27 @@ namespace Torneo.App.Consola
                         break;
                     case 5:
                         AddPosicion();
-                        break;    
+                        break;   
                     case 6:
+                        AddJugador();
+                        break; 
+                    case 7:
                         GetAllMunicipios();
                         break;
-                    case 7:
+                    case 8:
                         GetAllDTs();
                         break;
-                    case 8:
+                    case 9:
                         GetAllEquipos();
                         break;
-                    case 9:
+                    case 10:
                         GetAllPartidos();
                         break;
-                    case 10:
+                    case 11:
                         GetAllPosiciones();
+                        break;
+                    case 12:
+                        GetAllJugadores();
                         break;
                 }
             } while (opcion != 0);
@@ -142,6 +151,25 @@ namespace Torneo.App.Consola
             };
             _repoPosicion.AddPosicion(posicion);
         }
+        
+        private static void AddJugador()
+        {
+            Console.WriteLine("Ingrese el nombre del jugador");
+            string nombre = Console.ReadLine();
+            Console.WriteLine("Ingrese el numero de camiseta del jugador");
+            int numero = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el id del equipo");
+            int idEquipo = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el id de la posicion");
+            int idPosicion = Int32.Parse(Console.ReadLine());
+
+            var jugador = new Jugador
+            {
+                Nombre = nombre,
+                Numero = numero,
+            };
+            _repoJugador.AddJugador(jugador, idEquipo, idPosicion);
+        }
 
         private static void GetAllMunicipios()
         {
@@ -180,6 +208,14 @@ namespace Torneo.App.Consola
             foreach (var posicion in _repoPosicion.GetAllPosiciones())
             {
                 Console.WriteLine(posicion.Id + " " + posicion.Nombre);
+            }
+        }
+
+        private static void GetAllJugadores()
+        {
+            foreach (var jugador in _repoJugador.GetAllJugadores())
+            {
+                Console.WriteLine(jugador.Id + " " + jugador.Nombre + " " + jugador.Numero + " " + jugador.Equipo.Nombre + " " + jugador.Posicion.Nombre);
             }
         }
     }
