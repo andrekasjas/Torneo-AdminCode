@@ -155,7 +155,7 @@ namespace Torneo.App.Consola
         {
             foreach (var municipio in _repoMunicipio.GetAllMunicipios())
             {
-                Console.WriteLine("ID: " + municipio.Id + " NOMBRE: " + municipio.Nombre);
+                Console.WriteLine("ID: " + municipio.Id + " - NOMBRE: " + municipio.Nombre);
             }
             Console.WriteLine("\n");
         }
@@ -164,7 +164,7 @@ namespace Torneo.App.Consola
         {
             foreach (var jugador in _repoJugador.GetAllJugadores())
             {
-                Console.WriteLine("ID: " + jugador.Id + " NOMBRE: " + jugador.Nombre + " Número: " + jugador.Numero + " EQUIPO: " + jugador.Equipo.Nombre + " POSICION: " + jugador.Posicion.Nombre);
+                Console.WriteLine("ID: " + jugador.Id + " - NOMBRE: " + jugador.Nombre + " - Número: " + jugador.Numero + " - EQUIPO: " + jugador.Equipo.Nombre + " - POSICION: " + jugador.Posicion.Nombre);
             }
             Console.WriteLine("\n");
         }
@@ -173,7 +173,7 @@ namespace Torneo.App.Consola
         {
             foreach (var dt in _repoDT.GetAllDTs())
             {
-                Console.WriteLine("ID: " + dt.Id + " NOMBRE: " + dt.Nombre + " DOCUMENTO: " + dt.Documento + " TELÉFONO: " + dt.Telefono);
+                Console.WriteLine("ID: " + dt.Id + " - NOMBRE: " + dt.Nombre + " - DOCUMENTO: " + dt.Documento + " - TELÉFONO: " + dt.Telefono);
             }
             Console.WriteLine("\n");
         }
@@ -182,7 +182,7 @@ namespace Torneo.App.Consola
         {
             foreach (var equipo in _repoEquipo.GetAllEquipos())
             {
-                Console.WriteLine("ID: " + equipo.Id + " NOMBRE: " + equipo.Nombre + " MUNICIPIO: " + equipo.Municipio.Nombre + " DT: " + equipo.DirectorTecnico.Nombre);
+                Console.WriteLine("ID: " + equipo.Id + " - NOMBRE: " + equipo.Nombre + " - MUNICIPIO: " + equipo.Municipio.Nombre + " - DT: " + equipo.DirectorTecnico.Nombre);
             }
             Console.WriteLine("\n");
         }
@@ -191,7 +191,7 @@ namespace Torneo.App.Consola
         {
             foreach (var posicion in _repoPosicion.GetAllPosiciones())
             {
-                Console.WriteLine("ID: " + posicion.Id + " NOMBRE: " + posicion.Nombre);
+                Console.WriteLine("ID: " + posicion.Id + " - NOMBRE: " + posicion.Nombre);
             }
             Console.WriteLine("\n");
         }
