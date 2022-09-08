@@ -3,7 +3,7 @@ namespace Torneo.App.Persistencia
 {
     public interface IRepositorioPosicion
     {
-        Posicion AddPosicion(Posicion posicion);
-        IEnumerable<Posicion> GetAllPosiciones();
+        public Posicion AddPosicion(Posicion posicion);
+        public IEnumerable<Posicion> GetAllPosiciones();
     }
 }

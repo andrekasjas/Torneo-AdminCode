@@ -5,14 +5,19 @@ namespace Torneo.App.Consola
     class Program
     {
         private static IRepositorioMunicipio _repoMunicipio = new RepositorioMunicipio();
+        private static IRepositorioJugador _repoJugador = new RepositorioJugador();
         private static IRepositorioDT _repoDT = new RepositorioDT();
         private static IRepositorioEquipo _repoEquipo = new RepositorioEquipo();
         private static IRepositorioPartido _repoPartido = new RepositorioPartido();
         private static IRepositorioPosicion _repoPosicion = new RepositorioPosicion();
-        private static IRepositorioJugador _repoJugador = new RepositorioJugador();
 
         static void Main(string[] args)
         {
+            Console.WriteLine("");
+            Console.WriteLine(">>>>>>>>>>APLICACION TORNEO ADMIN CODE<<<<<<<<<<");
+            Console.WriteLine("Elija una opción:");
+            Console.WriteLine("");
+
             int opcion = 0;
             do
             {
@@ -30,6 +35,8 @@ namespace Torneo.App.Consola
                 Console.WriteLine("12. Mostar Jugadores");
                 Console.WriteLine("0. Salir");
                 Console.WriteLine("Ingrese una opcion");
+
+
                 opcion = Int32.Parse(Console.ReadLine());
                 switch (opcion)
                 {
@@ -72,6 +79,7 @@ namespace Torneo.App.Consola
                 }
             } while (opcion != 0);
         }
+
 
         private static void AddMunicipio()
         {
@@ -175,24 +183,27 @@ namespace Torneo.App.Consola
         {
             foreach (var municipio in _repoMunicipio.GetAllMunicipios())
             {
-                Console.WriteLine(municipio.Id + " " + municipio.Nombre);
+                Console.WriteLine("ID: " + municipio.Id + " - NOMBRE: " + municipio.Nombre);
             }
+            Console.WriteLine("\n");
         }
 
         private static void GetAllDTs()
         {
             foreach (var dt in _repoDT.GetAllDTs())
             {
-                Console.WriteLine(dt.Id + " " + dt.Nombre + " " + dt.Documento + " " + dt.Telefono);
+                Console.WriteLine("ID: " + dt.Id + " - NOMBRE: " + dt.Nombre + " - DOCUMENTO: " + dt.Documento + " - TELÉFONO: " + dt.Telefono);
             }
+            Console.WriteLine("\n");
         }
 
         private static void GetAllEquipos()
         {
             foreach (var equipo in _repoEquipo.GetAllEquipos())
             {
-                Console.WriteLine(equipo.Id + " " + equipo.Nombre + " " + equipo.Municipio.Nombre + " " + equipo.DirectorTecnico.Nombre);
+                Console.WriteLine("ID: " + equipo.Id + " - NOMBRE: " + equipo.Nombre + " - MUNICIPIO: " + equipo.Municipio.Nombre + " - DT: " + equipo.DirectorTecnico.Nombre);
             }
+            Console.WriteLine("\n");
         }
 
         private static void GetAllPartidos()
@@ -207,16 +218,21 @@ namespace Torneo.App.Consola
         {
             foreach (var posicion in _repoPosicion.GetAllPosiciones())
             {
-                Console.WriteLine(posicion.Id + " " + posicion.Nombre);
+                Console.WriteLine("ID: " + posicion.Id + " - NOMBRE: " + posicion.Nombre);
             }
+            Console.WriteLine("\n");
         }
 
         private static void GetAllJugadores()
         {
             foreach (var jugador in _repoJugador.GetAllJugadores())
             {
-                Console.WriteLine(jugador.Id + " " + jugador.Nombre + " " + jugador.Numero + " " + jugador.Equipo.Nombre + " " + jugador.Posicion.Nombre);
+                Console.WriteLine("ID: " + jugador.Id + " - NOMBRE: " + jugador.Nombre + " - Número: " + jugador.Numero + " - EQUIPO: " + jugador.Equipo.Nombre + " - POSICION: " + jugador.Posicion.Nombre);
             }
+            Console.WriteLine("\n");
         }
     }
+
 }
+
+
