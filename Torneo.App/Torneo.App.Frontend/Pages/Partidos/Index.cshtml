@@ -12,18 +12,24 @@
             <th scope="col">Visitante</th>
             <th scope="col">Goles Local</th>
             <th scope="col">Goles Visitante</th>
+            <th scope="col">Acciones</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.Partidos)
+        @foreach (var partido in Model.Partidos)
         {
             <tr>
-                <td>@item.Id</td>
-                <td>@item.FechaHora</td>
-                <td>@item.Local.Nombre</td>
-                <td>@item.Visitante.Nombre</td>
-                <td>@item.MarcadorLocal</td>
-                <td>@item.MarcadorVisitante</td>
+                <td>@partido.Id</td>
+                <td>@partido.FechaHora</td>
+                <td>@partido.Local.Nombre</td>
+                <td>@partido.Visitante.Nombre</td>
+                <td>@partido.MarcadorLocal</td>
+                <td>@partido.MarcadorVisitante</td>
+                <td>
+                    <a class="btn btn-primary" asp-page="./Details" asp-route-id="@partido.Id">
+                        Detalle
+                    </a>
+                </td>
             </tr>
         }
     </tbody>

@@ -23,5 +23,13 @@ namespace Torneo.App.Persistencia
                             .ToList();
             return partidos;
         }
+        public Partido GetPartido(int idPartido)
+        {
+            var partido = _dataContext.Partidos
+                            .Include(p => p.Local)
+                            .Include(p => p.Visitante)
+                            .FirstOrDefault(p => p.Id == idPartido);
+            return partido;
+        }
     }
 }
