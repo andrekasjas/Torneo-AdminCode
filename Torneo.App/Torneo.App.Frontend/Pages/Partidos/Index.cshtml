@@ -1,0 +1,30 @@
+﻿@page
+@model Torneo.App.Frontend.Pages.Partidos.IndexModel
+@{
+}
+<h1>Listado de Partidos</h1>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Local</th>
+            <th scope="col">Visitante</th>
+            <th scope="col">Goles Local</th>
+            <th scope="col">Goles Visitante</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Partidos)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.FechaHora</td>
+                <td>@item.Local.Nombre</td>
+                <td>@item.Visitante.Nombre</td>
+                <td>@item.MarcadorLocal</td>
+                <td>@item.MarcadorVisitante</td>
+            </tr>
+        }
+    </tbody>
+</table>
