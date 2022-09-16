@@ -16,6 +16,7 @@ namespace Torneo.App.Frontend.Pages.DTs
         }
 
 
+        //Invocar GetDT dentro del metodo OnGet tipo IActionResult
         public IActionResult OnGet(int id)
         {
             directorTecnico = _repoDt.GetDT(id);
