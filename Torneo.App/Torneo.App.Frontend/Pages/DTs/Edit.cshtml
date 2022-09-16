@@ -1,0 +1,28 @@
+﻿@page
+@model Torneo.App.Frontend.Pages.DTs.EditModel
+@{
+    <h1>Editar Director Técnico</h1>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="directorTecnico.Id"></label>
+            <input asp-for="directorTecnico.Id" class="form-control" readonly>
+        </div>
+        <div class="form-group">
+            <label asp-for="directorTecnico.Nombre"></label>
+            <input asp-for="directorTecnico.Nombre" class="form-control">
+        </div>
+         <div class="form-group">
+            <label asp-for="directorTecnico.Documento"></label>
+            <input asp-for="directorTecnico.Documento" class="form-control">
+        </div>
+         <div class="form-group">
+            <label asp-for="directorTecnico.Telefono"></label>
+            <input asp-for="directorTecnico.Telefono" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Editar Director Técnico</button>
+    </form>
+    <a class="btn btn-secondary" asp-page="./Index">Volver</a>
+
+
+
+}

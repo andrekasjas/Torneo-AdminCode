@@ -5,22 +5,21 @@ using Torneo.App.Persistencia;
 
 namespace Torneo.App.Frontend.Pages.DTs
 {
-    public class DetailsModel : PageModel
+    public class EditModel : PageModel
     {
-        private readonly IRepositorioDT _repoDT;
-
+        private readonly IRepositorioDT _repoDt;
         public DirectorTecnico directorTecnico { get; set; }
 
-        public DetailsModel(IRepositorioDT repoDT)
+        public EditModel(IRepositorioDT repoDt)
         {
-            _repoDT = repoDT;
+            _repoDt = repoDt;
         }
-
 
 
         public IActionResult OnGet(int id)
         {
-            directorTecnico = _repoDT.GetDT(id);
+            directorTecnico = _repoDt.GetDT(id);
+
             if (directorTecnico == null)
             {
                 return NotFound();
@@ -28,7 +27,20 @@ namespace Torneo.App.Frontend.Pages.DTs
             else
             {
                 return Page();
+
+
             }
         }
+
+        public IActionResult OnPost(DirectorTecnico directorTecnico)
+        {
+            _repoDt.UpdateDT(directorTecnico);
+            return RedirectToPage("Index");
+        }
+
+
+
+
     }
+
 }
