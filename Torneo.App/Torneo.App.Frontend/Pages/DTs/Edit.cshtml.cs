@@ -1,0 +1,34 @@
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Torneo.App.Dominio;
+using Torneo.App.Persistencia;
+
+namespace Torneo.App.Frontend.Pages.Dts
+{
+    public class EditModel : PageModel
+    {
+        private readonly IRepositorioDT _repoDT;
+        public DirectorTecnico DT { get; set; }
+        public EditModel(IRepositorioDT repoDT)
+        {
+            _repoDT = repoDT;
+        }
+        public IActionResult OnGet(int id)
+        {
+            DT = _repoDT.GetAllDTs(id);
+            if (DT == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return Page();
+            }
+        }
+        public IActionResult OnPost(DirectorTecnico DT)
+        {
+            _repoDT.UpdateDT(DT);
+            return RedirectToPage("Index");
+        }
+    }
+}
