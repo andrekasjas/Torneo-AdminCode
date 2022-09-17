@@ -5,8 +5,7 @@ namespace Torneo.App.Persistencia
     {
         public DirectorTecnico AddDT(DirectorTecnico directorTecnico);
         public IEnumerable<DirectorTecnico> GetAllDTs();
-        public DirectorTecnico GetDT(int IdDT);
-
-        public DirectorTecnico UpdateDT(DirectorTecnico IdDT);
+        public DirectorTecnico GetAllDTs(int Id);
+        public DirectorTecnico UpdateDT(DirectorTecnico directorTecnico);
     }
 }
