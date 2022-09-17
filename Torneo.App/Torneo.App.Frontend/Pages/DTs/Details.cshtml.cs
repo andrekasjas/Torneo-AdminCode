@@ -15,9 +15,6 @@ namespace Torneo.App.Frontend.Pages.DTs
         {
             _repoDT = repoDT;
         }
-
-
-
         public IActionResult OnGet(int id)
         {
             directorTecnico = _repoDT.GetDT(id);

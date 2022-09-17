@@ -3,45 +3,34 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Torneo.App.Dominio;
 using Torneo.App.Persistencia;
 
-namespace Torneo.App.Frontend.Pages.DTs
+namespace Torneo.App.Frontend.Pages.Dts
 {
     public class EditModel : PageModel
     {
-        private readonly IRepositorioDT _repoDt;
-        public DirectorTecnico directorTecnico { get; set; }
-
-        public EditModel(IRepositorioDT repoDt)
+        private readonly IRepositorioDT _repoDT;
+        public DirectorTecnico DT { get; set; }
+        public EditModel(IRepositorioDT repoDT)
         {
-            _repoDt = repoDt;
+            _repoDT = repoDT;
         }
-
 
         //Invocar GetDT dentro del metodo OnGet tipo IActionResult
         public IActionResult OnGet(int id)
         {
-            directorTecnico = _repoDt.GetDT(id);
-
-            if (directorTecnico == null)
+            DT = _repoDT.GetDT(id);
+            if (DT == null)
             {
                 return NotFound();
             }
             else
             {
                 return Page();
-
-
             }
         }
-
-        public IActionResult OnPost(DirectorTecnico directorTecnico)
+        public IActionResult OnPost(DirectorTecnico DT)
         {
-            _repoDt.UpdateDT(directorTecnico);
+            _repoDT.UpdateDT(DT);
             return RedirectToPage("Index");
         }
-
-
-
-
     }
-
 }
