@@ -15,7 +15,7 @@ namespace Torneo.App.Frontend.Pages.Dts
         }
         public IActionResult OnGet(int id)
         {
-            DT = _repoDT.GetAllDTs(id);
+            DT = _repoDT.GetDT(id);
             if (DT == null)
             {
                 return NotFound();
