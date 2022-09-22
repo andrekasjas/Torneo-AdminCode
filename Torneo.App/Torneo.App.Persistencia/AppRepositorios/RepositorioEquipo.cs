@@ -45,5 +45,20 @@ namespace Torneo.App.Persistencia
             return equipoEncontrado;
         }
 
+        public IEnumerable<Equipo> GetEquiposMunicipio(int idMunicipio)
+        {
+            var municipioEncontrado = _dataContext.Municipios.Find(idMunicipio);
+            var equipos = _dataContext.Equipos
+            .Where(e => e.Municipio == municipioEncontrado)
+            .Include(e => e.Municipio)
+            .Include(e => e.DirectorTecnico)
+            .ToList();
+            return equipos;
+        }
+        public IEnumerable<Equipo> SearchEquipos(string nombre)
+        {
+            return _dataContext.Equipos
+            .Where(e => e.Nombre.Contains(nombre));
+        }
     }
 }

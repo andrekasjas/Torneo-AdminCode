@@ -2,6 +2,25 @@
 @model Torneo.App.Frontend.Pages.Equipos.IndexModel
 @{
 }
+<form method="post">
+    <div class="input-group mb-3">
+        <select asp-for="MunicipioSelected" asp-items="@Model.MunicipioOptions"
+        name="idMunicipio" class="form-control">
+        <option value="-1">Ver todos</option>
+        </select>
+        <button class="btn btn-outline-secondary" asp-page-handler="Filtro">
+            Filtrar
+        </button>
+    </div>
+</form>
+<form method="post">
+    <div class="input-group mb-3">
+    <input asp-for="@Model.BusquedaActual" name="nombre" class="form-control">
+    <button class="btn btn-outline-secondary" asp-page-handler="Buscar">
+        Buscar
+    </button>
+    </div>
+</form>
 <h1>Listado de Equipos
 <a class="btn btn-primary" asp-page="./Create">Crear equipos</a>
 </h1>
