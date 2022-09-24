@@ -26,6 +26,14 @@ body {
   animation: AnimationName 24s ease infinite;
 }
 
+input:valid{
+    background: green;
+}
+
+input:invalid{
+    background: red;
+}
+
 @-webkit-keyframes AnimationName {
   0%{background-position:0% 50%}
   50%{background-position:100% 51%}
